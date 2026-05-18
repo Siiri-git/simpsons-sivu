@@ -70,7 +70,7 @@ ul#topNavigation li a:hover {
 /* Banner */
 section {
     grid-area: banner;
-    background-image: url(/images/locations/springfield.jpg);
+    background-color: #b1b1b1;
     padding-top: 2.5em;
     text-align: center;
 }
@@ -96,6 +96,7 @@ main {
     background-color: #FFFFFF;
     border: 1px solid #000000;
     margin: 0.5em;
+    height: 20em;
 }
 #simpsonsHouse {
     background-image: url(/images/locations/simpsons_house.jpg);

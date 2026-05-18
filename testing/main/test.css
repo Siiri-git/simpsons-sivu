@@ -1,0 +1,115 @@
+/* All elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header */
+header {
+    padding-left: 2em;
+    background: #FFFFFF;
+    color: #2B2B2B;
+}
+#headContainer {
+    display: flex;
+    flex-direction: row;
+}
+header #logo {
+    margin-right: 2em;
+    padding-top: 0.6em;
+    height: 4em;
+    width: auto;
+}
+
+/* Banner */
+.banner {
+    height: 8em;
+    background-color: #FFFFFF;
+    border: #2B2B2B;
+    border-width: 3px;
+    border-style: none none solid none;
+}
+
+/* Top Navigation */
+.navbar {
+    display: flex;
+    background-color: #FFFFFF;
+    border: #2B2B2B;
+    border-width: 3px;
+    border-style: solid none solid none;
+}
+.navbar a {
+    color: #2B2B2B;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
+
+/* Column container */
+.container {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sidebar */
+.side {
+    flex: 30%;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Main column */
+.main {
+    flex: 70%;
+    background-color: #FFFFFF;
+    padding: 1em;
+}
+#description {
+    border: #2B2B2B;
+    border-style: none none solid none;
+}
+
+/* Placeholder */
+.placeHolder {
+    background-color: #FFFFFF;
+    padding: 1em;
+    border-width: 1px;
+    border: #2B2B2B;
+    border-style: solid;
+}
+
+/* Footer */
+footer {
+  padding: 0.1em;
+  text-align: center;
+  background: #C0C0C0;
+}
+
+/* Texts */
+a {
+    color: #2B2B2B;
+    text-decoration: none;
+}
+.reviewWriter {
+    float: right;
+}
+.reviewWriter:hover {
+    float: right;
+    color: #3FA0FF;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .container, .navbar {   
+    flex-direction: column;
+  }
+}

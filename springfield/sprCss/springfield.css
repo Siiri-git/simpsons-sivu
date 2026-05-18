@@ -8,7 +8,7 @@ body {
     'banner banner banner'
     'main main main';
   grid-template-columns: 5em 3fr 1.5fr;
-  grid-template-rows: 6em 3em 8em auto;
+  grid-template-rows: 6em 3em 14em auto;
 
 }
 
@@ -70,7 +70,7 @@ ul#topNavigation li a:hover {
 /* Banner */
 section {
     grid-area: banner;
-    background-color: lightblue;
+    background-image: url(/images/locations/springfield.jpg);
     padding-top: 2.5em;
     text-align: center;
 }
@@ -85,9 +85,10 @@ main {
 
 }
 #mainContainer {
+    overflow: scroll;
     display: grid;
-    background-color: darkseagreen;
-    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #FFFFFF;
+    grid-template-columns: repeat(3, 1fr);;
     row-gap: 1em;
     padding-top: 1em;
 }
@@ -99,16 +100,31 @@ main {
 #simpsonsHouse {
     background-image: url(/images/locations/simpsons_house.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:  100% 100%;
 }
 #moesTavern {
     background-image: url(/images/locations/moes_tavern.jpg);
-    background-size: cover;
+    background-size:  100% 100%;
     background-repeat: no-repeat;
 }
 #kwikEMart {
     background-image: url(/images/locations/kwik_e_mart.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+#school {
+    background-image: url(/images/locations/theschool.jpg);
+    background-repeat: no-repeat;
+    background-size:  100% 100%;
+}
+#krustyBurger {
+    background-image: url(/images/locations/krustyBurger.jpg);
+    background-size:  100% 100%;
+    background-repeat: no-repeat;
+}
+#church {
+    background-image: url(/images/locations/church.jpg);
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 

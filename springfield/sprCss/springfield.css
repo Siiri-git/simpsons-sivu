@@ -84,7 +84,33 @@ main {
     padding-bottom: 1em;
 
 }
-
+#mainContainer {
+    display: grid;
+    background-color: darkseagreen;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1em;
+    padding-top: 1em;
+}
+#mainContainer div {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    margin: 0.5em;
+}
+#simpsonsHouse {
+    background-image: url(/images/locations/simpsons_house.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#moesTavern {
+    background-image: url(/images/locations/moes_tavern.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#kwikEMart {
+    background-image: url(/images/locations/kwik_e_mart.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 /* Texts */
 @font-face {

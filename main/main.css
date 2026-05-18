@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'navigation navigation navigation'
+    'banner banner banner'
+    'main main sidebar';
+  grid-template-columns: 5em 3fr 1.5fr;
+  grid-template-rows: 5em 3em 4em auto;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 7em 15em;
+    background-color: #FFFFFF;
+    gap: 2em;
+}
+.container div {
+    color: #000000;
+}
+/* Header */
+header {
+    grid-area: header;
+    background-color: #FFFFFF;
+    padding-left: 1em;
+}
+img#logo{
+    padding-top: 0.4em;
+    height: 4em;
+    width: 7em;
+}
+
+/* Navigation */
+nav {
+    grid-area: navigation;
+    background-color: lightsalmon;
+}
+
+/* Banner */
+section {
+    grid-area: banner;
+    background-color: lightblue;
+}
+
+/* Main */
+main {
+    grid-area: main;
+    background-color: palegoldenrod;
+}
+aside {
+    grid-area: sidebar;
+    background-color:palegreen;
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+@font-face {
+  font-family: "Simpsons Font";
+  src: url(../fonts/Simpsonfont\ DEMO.otf);
+  font-weight: normal;
+}
+h2 {
+    font-family: "Simpsons Font";
+    word-spacing: 0.5em;
+}

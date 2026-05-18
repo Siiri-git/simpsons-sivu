@@ -7,6 +7,7 @@
 body {
   font-family: Arial;
   margin: 0;
+  padding: 0;
 }
 
 /* Header */
@@ -28,7 +29,7 @@ header #logo {
 
 /* Banner */
 .banner {
-    height: 6em;
+    height: 8em;
     background-color: #FFFFFF;
     border: #2B2B2B;
     border-width: 3px;
@@ -53,63 +54,40 @@ header #logo {
     background-color: #2B2B2B;
     color: #FFFFFF;
 }
+a.active {
+    background-color: #2B2B2B;
+    color: #FFFFFF;
+}
 
-/* Column container */
-.container {  
+/* Main Area */
+.mainContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    justify-content: center;
+}
+#firstRow {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
 }
 
-/* Sidebar */
-.side {
-    flex: 30%;
-    background-color: #FFFFFF;
-    padding: 20px;
-}
-
-/* Main column */
-.main {
-    flex: 70%;
-    background-color: #FFFFFF;
-    padding: 1em;
-}
-#description {
+.location {
+    width: 25em;
+    height: 15em;
+    margin: 10px;
     border: #2B2B2B;
-    border-style: none none solid none;
-}
-
-/* Placeholder */
-.basicInfo {
-    background-color: #FFFFFF;
-    padding: 1em;
-    border-width: 1px;
-    border: #2B2B2B;
+    border-width: 2px;
     border-style: solid;
 }
-
-/* Footer */
-footer {
-  padding: 0.1em;
-  text-align: center;
-  background: #C0C0C0;
+.location img{
+    width: 100%;
+    height: 100%;
 }
 
-/* Texts */
-a {
-    color: #2B2B2B;
-    text-decoration: none;
-}
-.reviewWriter {
-    float: right;
-}
-.reviewWriter:hover {
-    float: right;
-    color: #3FA0FF;
-}
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .container, .navbar {   
+/* Adjust by screen size */
+@media screen and (max-width:600px) {
+  div.flex-container {
     flex-direction: column;
-  }
+    }
 }

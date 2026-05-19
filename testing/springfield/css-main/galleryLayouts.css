@@ -61,15 +61,9 @@ main h2 {
     background-color: #FFFFFF;
     justify-content: center;
 }
-#firstRow {
-    margin-top: 2em;
-    display: flex;
-    flex-direction: row;
-}
-
 .location {
-    width: 25em;
-    height: 12em;
+    width: 50vh;
+    height: 30vh;
     margin: 10px;
     border: #2B2B2B;
     border-width: 2px;
@@ -80,9 +74,49 @@ main h2 {
     height: 100%;
 }
 
+/* Singular Images */
+.singleImage {
+    width: 98%;
+    height: 100%;
+
+    border: #2B2B2B;
+    border-style: solid;
+    border-width: 2px;
+
+    justify-items: auto;
+}
+.singleImage img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Buttons */
+.goBack {
+  width: 5em;
+  height: 2em;
+
+  background-color: #FFFFFF;
+  border: #2B2B2B;
+  border-style: solid;
+  border-width: 2px;
+
+  font-size: medium;
+
+  transition: width 1s, height 1s;
+}
+.goBack:hover {
+  width: 5.5em;
+  height: 2.5em;
+}
+
 /* Adjust by screen size */
-@media screen and (max-width:600px) {
-  div.mainContainer {
+@media screen and (max-width:650px) {
+    div.mainContainer {
     flex-direction: column;
+    align-items: center;
+    }
+    .singleImage {
+    width: 98%;
+    height: 60%;
     }
 }

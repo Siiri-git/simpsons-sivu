@@ -73,8 +73,8 @@ a.active {
 }
 
 .location {
-    width: 25em;
-    height: 15em;
+    width: 35em;
+    height: 20em;
     margin: 10px;
     border: #2B2B2B;
     border-width: 2px;
@@ -87,7 +87,8 @@ a.active {
 
 /* Adjust by screen size */
 @media screen and (max-width:600px) {
-  div.flex-container {
+  div.mainContainer {
     flex-direction: column;
+    align-items: center;
     }
 }

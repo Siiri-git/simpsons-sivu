@@ -1,0 +1,82 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    height: 100vh;
+    background: #ffffff;
+}
+
+header, nav {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+main {
+    padding: 1em;
+    margin: auto;
+    background: #ffffff
+}
+
+.message {
+    padding: 1em 0;
+}
+
+.message + .message {
+    border-top: 1px solid #000000;
+}
+
+.msg-header {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.msg-title {
+    font-size: 1.1em;
+    margin-bottom: 0.2em;
+}
+
+#newMsgBtn {
+    margin-bottom: 1em;
+    padding: 1em 0.5em;
+    font-size: 1.1em;
+}
+
+dialog {
+    border: 1px #000000 solid;
+    padding: 2.5em;
+    border-radius: 5px;
+    width: 60vh;
+}
+
+dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+dialog input {
+    float: right;
+    width: 70%;
+
+}
+dialog textarea {
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.1em;    
+}
+
+dialog textarea {
+    height: 20vh;
+    resize: vertical;
+}
+
+.btn-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+}
+
+button {
+    padding: 0.5em 0.8em;
+    font-size: 1.1em;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message Board</title>
+    <link rel="stylesheet" href="../css/forum.css">
+</head>
+<body>
+
+<header>Header</header>
+<nav>Navigation Bar</nav>
+
+<main>
+    <button id="newMsgBtn">New Message</button>
+
+    <div id="messageList"></div>
+
+    <dialog id="msgDialog">
+        <form id="msgForm" method="dialog">
+            <label>Name:
+                <input type="text" id="senderInput" required>
+            </label>
+
+            <label>Title:
+                <input type="text" id="titleInput" required>
+            </label>
+
+            <textarea id="bodyInput" placeholder="Write your message..." required></textarea>
+
+            <div class="btn-row">
+                <button type="button" id="cancelBtn">Cancel</button>
+                <button type="submit" id="sendBtn">Send</button>
+            </div>
+        </form>
+    </dialog>
+</main>
+
+<script src="../javaScript/forum.js"></script>
+</body>
+</html>

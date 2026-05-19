@@ -5,7 +5,7 @@ body {
     font-family: Arial;
     margin: 0;
     height: 100vh;
-    background: #FFFFFF;
+    background: #FCCB00;
     overflow-y: scroll;
 }
 
@@ -73,7 +73,58 @@ header h1 {
 }
 
 /* Main Content */
-main {
-
+.mainContainer {
+    background-color: #FFFFFF;
+    padding: 1em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-.mainContainer
+.galleryContainer {
+    flex: 100%;
+    gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.galleryContainer div {
+    color: #FFFFFF;
+    width: 40%;
+    height: auto;
+    text-align: center;
+}
+.imgContainer {
+    height: 20vh;
+}
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Adjust Layout depending on screen width */
+@media screen and (max-width: 600px) {
+    .headContainer {
+        align-items: center;
+        flex-direction: column;
+    }
+    .navContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navContainer a {
+        width: 100%;
+    }
+    .galleryContainer {
+        align-items: center;
+        flex-direction: column;
+    }
+    .galleryContainer div {
+        color: #FFFFFF;
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+}

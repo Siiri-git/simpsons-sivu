@@ -1,53 +1,145 @@
 * {
   box-sizing: border-box;
 }
-
 body {
-  margin: 0;
-  padding: 0;
-  height: 100vh;
-  font-family: arial;
+    font-family: Arial;
+    margin: 0;
+    height: 100vh;
+    background: #FFFFFF;
+    overflow-y: scroll;
+}
+
+/* Main Area */
+main {
+    margin: auto;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    background: #FFFFFF;
+
+}
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#description {
+    border-style: none none solid none;
+    word-spacing: 0.2em;
+}
+.infoContainer {
+    flex: 65%;
+    padding: 1em;
+    background-color: #FFFFFF;
+}
+.sideContainer {
+    top: 1em;
+    position: sticky;
+    flex: 30%;
+    padding: 1em;
+    background-color: #FFFFFF;
+    border: 2px solid #2b2b2b;
+    height: 100%;
 }
 
 /* Header Stuff */
 header {
-  background-color: #FFFFFF;
-  padding: 10px;
-  text-align: center;
+    background-color: #5C9ED9;
+    padding: 0.5em;
+    text-align: center;
+}
+header h1 {
+    color: #FFFFFF;
 }
 .headContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-  flex-wrap: row wrap;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: row wrap;
 }
 #logoContainer {
-  width: 10em;
-  height: 5em;
+    width: 10em;
+    height: 5em;
 }
 #logoContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 /* Top navigation bar */
 .navContainer {
-  display: flex;
-  justify-content: flex-start;
-  background-color: #FFFFFF;
-  border-style: solid none solid none;
-  flex-wrap: wrap;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #FFFFFF;
+    border-style: solid none solid none;
+    flex-wrap: wrap;
 }
 .navContainer a {
-  color: #2b2b2b;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  width: 20%;
-  text-decoration: none;
-  text-align: center;
+    color: #2b2b2b;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
 }
 .navContainer a:hover {
-  background-color: #2b2b2b;
-  color: #FFFFFF;
+    background-color: #2b2b2b;
+    color: #FFFFFF;
+}
+.navContainer .active {
+    background-color: #2b2b2b;
+    color: #FFFFFF;
+}
+
+/* Banner Stuff */
+.bannerContainer {
+    width: 100%;
+    height: 20vh;
+    border: 2px black;
+    border-style: none none solid none;
+    margin-bottom: 25px;
+}
+.bannerContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Texts */
+.sideInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.review {
+    word-spacing: 0.2em;
+    line-height: 1.5em;
+}
+.reviewWriter {
+    text-align: right;
+}
+.reviewWriter a {
+    color: #2b2b2b;
+    text-decoration: none;
+}
+.reviewWriter a:hover {
+    color: #5C9ED9;
+}
+
+/* Adjust Layout depending on screen width */
+@media screen and (max-width: 700px) {
+    .headContainer, .navContainer {   
+        flex-direction: column;
+    }
+    .navContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navContainer a {
+        width: 100%;
+    }
+    .mainContainer {
+        flex-direction: column;
+    }
 }

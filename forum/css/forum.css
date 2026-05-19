@@ -5,14 +5,15 @@ body {
     font-family: Arial;
     margin: 0;
     height: 100vh;
-    background: #ffffff;
+    background: #FCCB00;
+    overflow-y: scroll;
 }
 
 /* Main Area */
 main {
     padding: 1em;
-    margin: auto;
-    background: #ffffff
+    margin: 1em;
+    background: #FFFFFF;
 }
 
 /* Messages */
@@ -33,13 +34,24 @@ main {
 
 /* New Message */
 #newMsgBtn {
+    background-color: #5C9ED9;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    padding: 1em 0.5em;
+    font-size: 1.1em;
+}
+#newMsgBtn:hover {
+    background-color: #1769B6;
     margin-bottom: 1em;
     padding: 1em 0.5em;
     font-size: 1.1em;
 }
     /* Dialog & Form */
 dialog {
-    border: 1px #000000 solid;
+    background-color: #CDDF8D;
+    border: 2px #000000 solid;
     padding: 2.5em;
     border-radius: 5px;
     width: 80vh;
@@ -49,9 +61,18 @@ dialog form {
     flex-direction: column;
     gap: 0.5em;
 }
+dialog label {
+    color: #1769B6;
+}
 dialog input {
+    border: 2px solid #1769B6;
+    border-radius: 6px;
     float: right;
     width: 70%;
+}
+dialog input:focus {
+    background-color: #5C9ED9;
+    color: #FFFFFF;
 }
 dialog textarea {
     width: 100%;
@@ -60,16 +81,35 @@ dialog textarea {
     height: 20vh;
     resize: vertical;
 }
+    /* Buttons */
 .btn-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 1em;
     margin-top: 0.5em;
 }
 button {
     padding: 0.5em 0.8em;
     font-size: 1.1em;
 }
-
+#cancelBtn {
+    background-color: #5C9ED9;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 6px;
+}
+#cancelBtn:hover {
+    background-color: #1769B6;
+}
+#sendBtn {
+    background-color: #5C9ED9;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 6px;
+}
+#sendBtn:hover {
+    background-color: #1769B6;
+}
 
 /* Header Stuff */
 header {
@@ -100,12 +140,13 @@ header h1 {
 .navContainer {
     display: flex;
     justify-content: flex-start;
-    background-color: #FFFFFF;
+    background-color: #5C9ED9;
+    border-color: #1769B6;
     border-style: solid none solid none;
     flex-wrap: wrap;
 }
 .navContainer a {
-    color: #2b2b2b;
+    color: #FFFFFF;
     padding-top: 1em;
     padding-bottom: 1em;
     width: 20%;
@@ -113,17 +154,18 @@ header h1 {
     text-align: center;
 }
 .navContainer a:hover {
-    background-color: #2b2b2b;
+    background-color: #1769B6;
     color: #FFFFFF;
 }
 .navContainer .active {
-    background-color: #2b2b2b;
+    background-color: #1769B6;
     color: #FFFFFF;
 }
 
 /* Adjust Layout depending on screen width */
-@media screen and (max-width: 700px) {
-  .headContainer, .navContainer {   
+@media screen and (max-width: 600px) {
+  .headContainer, .navContainer {
+    align-items: center;
     flex-direction: column;
   }
   .navContainer {

@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+    height: 100vh;
+    background: #FFFFFF;
+    overflow-y: scroll;
+}
+
+/* Header Stuff */
+header {
+    background-color: #5C9ED9;
+    padding: 0.5em;
+    text-align: center;
+}
+header h1 {
+    color: #FFFFFF;
+}
+.headContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: row wrap;
+}
+#logoContainer {
+    width: 10em;
+    height: 5em;
+}
+#logoContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Top navigation bar */
+.navContainer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #5C9ED9;
+    border-style: solid none solid none;
+    border-color: #1769B6;
+    flex-wrap: wrap;
+}
+.navContainer a {
+    color: #FFFFFF;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+}
+.navContainer a:hover {
+    background-color: #1769B6;
+    color: #FFFFFF;
+}
+.navContainer .active {
+    background-color: #1769B6;
+    color: #FFFFFF;
+}
+
+/* Banner Stuff */
+.bannerContainer {
+    width: 100%;
+    height: 20vh;
+    margin-bottom: 25px;
+}
+.bannerContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main Content */
+main {
+
+}
+.mainContainer

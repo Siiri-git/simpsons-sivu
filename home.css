@@ -5,7 +5,7 @@ body {
     font-family: Arial;
     margin: 0;
     height: 100vh;
-    background: #FFFFFF;
+    background: #FCCB00;
     overflow-y: scroll;
 }
 
@@ -15,30 +15,32 @@ main {
     padding-left: 1em;
     padding-right: 1em;
     padding-bottom: 1em;
-    background: #FFFFFF;
-
 }
 .mainContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+   
 }
 #description {
     border-style: none none solid none;
     word-spacing: 0.2em;
 }
 .infoContainer {
+    background: #FFFFFF;     
+    margin-left: 1em;
+    margin-right: 1em;
+    color: #000000;
     flex: 65%;
     padding: 1em;
-    background-color: #FFFFFF;
 }
 .sideContainer {
     top: 1em;
     position: sticky;
     flex: 30%;
     padding: 1em;
-    background-color: #FFFFFF;
-    border: 2px solid #2b2b2b;
+    background-color: #E44423;
+    color: #FFFFFF;
     height: 100%;
 }
 
@@ -71,12 +73,13 @@ header h1 {
 .navContainer {
     display: flex;
     justify-content: flex-start;
-    background-color: #FFFFFF;
+    background-color: #5C9ED9;
     border-style: solid none solid none;
+    border-color: #1769B6;
     flex-wrap: wrap;
 }
 .navContainer a {
-    color: #2b2b2b;
+    color: #FFFFFF;
     padding-top: 1em;
     padding-bottom: 1em;
     width: 20%;
@@ -84,11 +87,11 @@ header h1 {
     text-align: center;
 }
 .navContainer a:hover {
-    background-color: #2b2b2b;
+    background-color: #1769B6;
     color: #FFFFFF;
 }
 .navContainer .active {
-    background-color: #2b2b2b;
+    background-color: #1769B6;
     color: #FFFFFF;
 }
 
@@ -96,9 +99,8 @@ header h1 {
 .bannerContainer {
     width: 100%;
     height: 20vh;
-    border: 2px black;
-    border-style: none none solid none;
     margin-bottom: 25px;
+    border-style: none none solid none;
 }
 .bannerContainer img {
     width: 100%;
@@ -120,16 +122,17 @@ header h1 {
     text-align: right;
 }
 .reviewWriter a {
-    color: #2b2b2b;
+    color: #000000;
     text-decoration: none;
 }
 .reviewWriter a:hover {
-    color: #5C9ED9;
+    color: #1769B6;
 }
 
 /* Adjust Layout depending on screen width */
-@media screen and (max-width: 700px) {
-    .headContainer, .navContainer {   
+@media screen and (max-width: 600px) {
+    .headContainer {
+        align-items: center;
         flex-direction: column;
     }
     .navContainer {
@@ -141,5 +144,8 @@ header h1 {
     }
     .mainContainer {
         flex-direction: column;
+    }
+    .sideContainer {
+        margin-top: 1em;
     }
 }

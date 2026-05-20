@@ -94,8 +94,12 @@ header h1 {
     text-align: center;
 }
 .imgContainer {
-    height: 20em;
-    width: 20em;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-width: 0.2em 0.3em 0.2em 0.3em;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
 }
 .imgContainer img {
     width: 100%;
@@ -110,6 +114,7 @@ header h1 {
         flex-direction: column;
     }
     .navContainer {
+        border-top: 2px #000000 solid;
         flex-direction: column;
         align-items: center;
     }
@@ -125,5 +130,10 @@ header h1 {
         width: 90%;
         height: auto;
         text-align: center;
+    }
+    .imgContainer {
+        border-width: 0.35em 0.35em 0.1em 0.35em;
+        border-color: #FFFFFF;
+        background-color: #FFFFFF;
     }
 }

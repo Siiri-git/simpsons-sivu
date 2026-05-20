@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <title>The Simpsons Page – Character</title>
+  <link rel="stylesheet" href="../css/charinfo.css">
+</head>
+<body>
+    <header class="headContainer">
+        <div id="logoContainer">
+            <a href="/home.html">
+                <img src="/images/logo.png" alt="simpsons logo">
+            </a>
+        </div>
+        <h1>The Simpsons Page</h1>
+    </header>
+        <nav class="navContainer">
+            <a href="./springfield.html">Springfield</a>
+            <a class="active" href="/characters/html/characters.html">Characters</a>
+            <a href="/forum/html/forum.html">Forum</a>
+        </nav>
+
+    <main class="mainContainer">
+        <!-- Character Image -->
+        <section class="character-image">
+        <img src="https://via.placeholder.com/350x400?text=Character+Image" alt="character image">
+        </section>
+
+        <!-- Info / Memes -->
+        <section class="character-content">
+            <div class="tabs">
+                <button class="tab-button active" data-target="info">Info</button>
+                <button class="tab-button" data-target="memes">Memes</button>
+            </div>
+
+            <!-- INFO NÄKYMÄ -->
+            <div id="info" class="tab-panel active">
+                <h2 class="character-name">Name</h2>
+                <p class="character-description">
+                description
+                </p>
+
+                <div class="sound-clips">
+                    <div class="sound-item">
+                        <p>Sound clip 1</p>
+                        <audio controls>
+                        <source src="" type="audio/wav">
+                        </audio>
+                    </div>
+
+                    <div class="sound-item">
+                        <p>Sound clip 2</p>
+                        <audio controls>
+                        <source src="" type="audio/wav">
+                        </audio>
+                    </div>
+                    
+                    <div class="sound-item">
+                        <p>Sound clip 3</p>
+                        <audio controls>
+                        <source src="" type="audio/wav">
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="voice-actor">
+                    <img src="" alt="voice actor">
+                    <span class="voice-actor-name">Voice Actor</span>
+                </div>
+            </div>
+
+            <!-- Memes Content -->
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="/images/simpsons_house/bartsroom.png" alt="Bart's Room" width="600" height="400">
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <script src="../JavaScript/charinfo.js"></script>
+</body>
+</html>

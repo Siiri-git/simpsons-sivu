@@ -1,20 +1,23 @@
-// Tabien vaihto Info / Memes
-document.addEventListener("DOMContentLoaded", () => {
+// Tabien vaihto Info <-> Memes
+document.addEventListener("DOMContentLoaded", function () {
   const tabButtons = document.querySelectorAll(".tab-button");
   const tabPanels = document.querySelectorAll(".tab-panel");
 
   tabButtons.forEach((btn) => {
     btn.addEventListener("click", () => {
-      const targetId = btn.dataset.target;
+      const targetId = btn.getAttribute("data-target");
 
       // Poista active kaikista napeista
       tabButtons.forEach((b) => b.classList.remove("active"));
-      // Piilota kaikki panelit
+      // Piilota kaikki paneelit
       tabPanels.forEach((panel) => panel.classList.remove("active"));
 
-      // Aktivoi valittu
+      // Aktivoi valittu nappi ja paneeli
       btn.classList.add("active");
-      document.getElementById(targetId).classList.add("active");
+      const targetPanel = document.getElementById(targetId);
+      if (targetPanel) {
+        targetPanel.classList.add("active");
+      }
     });
   });
 });

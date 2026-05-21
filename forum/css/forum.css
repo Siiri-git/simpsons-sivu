@@ -51,9 +51,8 @@ main {
     /* Dialog & Form */
 dialog {
     background-color: #CDDF8D;
-    border: 2px #000000 solid;
-    padding: 2.5em;
-    border-radius: 5px;
+    border: 0px #CDDF8D solid;
+    padding: 2em;
     width: 80vh;
 }
 dialog form {

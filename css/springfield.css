@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
     font-family: Arial;
     margin: 0;
@@ -57,6 +60,53 @@ header h1 {
     color: #FFFFFF;
 }
 
+/* Main Content */
+#mainContainer {
+    padding: 0.5em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+    /* Image Content Rows */
+.galleryContainer {
+    flex: 100%;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+    /* Images */
+.galleryContainer div img {
+    padding-top: 0vh;
+    padding-bottom: 0.5vh;    
+}
+.galleryContainer div img:hover {
+    padding-top: 0.5vh;
+    padding-bottom: 0vh;  
+}
+
+    /* Image Container */
+.imgContainer {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h2 {
+    color: #E44423;
+}
+
 /* Adjust Layout depending on screen width */
 @media screen and (max-width: 600px) {
     h2 {
@@ -87,95 +137,45 @@ header h1 {
     }
 }
 
-/* Main Content */
-.mainContainer {
-    padding: 0.5em;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #FFFFFF;
-}
-    /* Image Content Rows */
-.galleryContainer {
-    flex: 100%;
-    gap: 0.5em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-    /* Images */
-.galleryContainer div img {
-    padding-top: 0vh;
-    padding-bottom: 0.5vh;    
-}
-.galleryContainer div img:hover {
-    padding-top: 0.5vh;
-    padding-bottom: 0vh;  
-}
-
-    /* Image Container */
-.imgContainer {
-    width: 40%;
-    height: auto;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-.imgContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.singleImg {
-    cursor: pointer;
-}
-/* MY STUFF ^^ */
-
-/* Back button */
+/* Back Button */
 #backBtn {
-    margin: 15px;
-    padding: 10px 20px;
-    font-size: 16px;
+    margin: 1em;
+    padding: 0.5em 1em;
+    font-size: 1.1em;
+    background-color: #5C9ED9;
+    color: #FFFFFF;
+    border-style: none;
+    border-radius: 6px;
 }
-
-/* Hidden utility class */
+#backBtn:hover {
+    background-color: #1769B6;
+}
+/* Hidden Content */
 .hidden {
     display: none !important;
 }
 
-/* Main content */
-main {
-    padding: 20px;
-}
-
-/* Grid of images */
-.grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.grid-img {
-    width: calc(25% - 15px);
-    height: 150px;
-    object-fit: cover;
-    cursor: pointer;
-    border: 2px solid #000;
-}
-
-/* Single image view */
 #singleImageView {
+    flex: 100%;
+    gap: 0.5em;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
+#singleImage{
+    width: 100%;
+    max-height: fit-content;
+    object-fit: contain;
+    border: 3em #FCCB00;
+    border-style: none none solid none;
+}
 
-#singleImage {
-    width: 80%;
-    max-width: 900px;
-    border: 3px solid #000;
+.smallContainer {
+    padding: 0.5em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }

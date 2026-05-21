@@ -1,88 +1,74 @@
 <!DOCTYPE html>
-<html lang="fi">
-    <head>
-        <meta charset="UTF-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="keywords" content="The Simpsons, Simpsons, wiki, fanwiki, locations, places">
-        <meta name="description" content="A fanwiki page with different locations from The Simpsons seriess.">
-        <meta name="author" content="Siiri">
+    <meta name="keywords" content="The Simpsons, Simpsons, wiki, fanwiki, locations, places">
+    <meta name="description" content="A fanwiki page with different locations from The Simpsons seriess.">
+    <meta name="author" content="Siiri">
 
-        <title>Simpson House Page</title>
+    <title>Springfield Page</title>
 
-        <link rel="stylesheet" href="/css/picturegalleries.css">
-    </head>
+    <link rel="stylesheet" href="/css/springfield.css">
+    <script src="/javascript/springfield.js" defer></script>
+</head>
+<body>
 
-    <body>
-        <header class="headContainer">
-            <div id="logoContainer">
-                <a href="/home.html">
-                    <img src="/images/logo.png" alt="simpsons logo">
-                </a>
-            </div>
-            <h1>The Simpsons Page</h1>
-        </header>
-        <nav class="navContainer">
-            <a class="active" href="/springfield/springfield.html">Springfield</a>
-            <a href="/characters/characters.html">Characters</a>
-            <a href="/forum/html/forum.html">Forum</a>
-        </nav>
-        
-        <h2>Simpson's House</h2>
-        <div class="mainContainer"> <!-- Main Area -->
-            <div class="galleryContainer"> <!-- First Row -->
+<header class="headContainer">
+        <div id="logoContainer">
+            <a href="/home.html">
+                <img src="/images/logo.png" alt="simpsons logo">
+            </a>
+        </div>
+        <h1>The Simpsons Page</h1>
+    </header>
+    <nav class="navContainer">
+        <a class="active" href="../springfield.html">Springfield</a>
+        <a href="/characters/characters.html">Characters</a>
+        <a href="/forum/html/forum.html">Forum</a>
+    </nav> 
+
+    <!-- Back button (hidden by default) -->
+    <button id="backBtn" class="hidden">← Back</button>
+    
+    <div id="mainContainer"> <!-- Main Content -->
+        <h2>Simpson's Home</h2>
+        <div id="firstView">
+            <div class="galleryContainer"> <!-- 1st Row of Images -->
                 <div class="imgContainer">
-                    <a href="" title="See Image">
-                        <img src="/images/simpsons_house/livingroom.jpg" alt="Living Room">
-                    </a>
+                    <img src="/images/simpsons_house/thehouse.jpg" class="singleImg" alt="house">
                 </div>
 
                 <div class="imgContainer">
-                    <a href="" title="See Image">
-                        <img src="/images/simpsons_house/sittingroom.jpg" alt="Sitting Room">
-                    </a>
-             
+                    <img src="/images/moes_tavern/moestavern.png" class="singleImg" alt="moes">
                 </div>
 
                 <div class="imgContainer">
-                    <a href="" title="See Image">
-                        <img src="/images/simpsons_house/kitchen.jpg" alt="Kitchen">
-                    </a>
+                    <img src="/images/kwik_e_mart/frontkwikemart.png" class="singleImg" alt="kwikEmart">
+                </div>
+            </div> <!-- End of 1st Row of Images -->
+
+            <div class="galleryContainer"> <!-- 2nd Row of Images -->
+                <div class="imgContainer">
+                    <img src="/images/simpsons_house/thehouse.jpg" class="singleImg" alt="house">
                 </div>
 
                 <div class="imgContainer">
-                    <a href="" title="See Image">
-                        <img src="/images/simpsons_house/rumpusroom.png" alt="Rumpus Room">
-                    </a>
-                </div>
-            </div> <!-- End of First Row -->
-
-            <div class="galleryContainer"> <!-- Second Row -->
-                <div class="imgContainer">
-                    <a href="" title="See Image">
-                        <img src="/images/simpsons_house/mastbedroom.jpg" alt="Master Bedroom">
-                    </a>
+                    <img src="/images/moes_tavern/moestavern.png" class="singleImg" alt="moes">
                 </div>
 
                 <div class="imgContainer">
-                    <a href="" title="See Image">
-                        <img src="/images/simpsons_house/bartsroom.png" alt="Bart's Room">
-                    </a>
-             
+                    <img src="/images/kwik_e_mart/frontkwikemart.png" class="singleImg" alt="kwikEmart">
                 </div>
+            </div> <!-- End of 2nd Row of Images -->
+        </div>
+    </div> <!-- End Of Main Content -->
 
-                <div class="imgContainer">
-                    <a href="" title="See Image">
-                        <img src="/images/simpsons_house/lisasroom.jpg" alt="Lisa's Room">
-                    </a>
-                </div>
-
-                <div class="imgContainer">
-                    <a href="" title="See Image">
-                        <img src="/images/simpsons_house/maggiesroom.jpg" alt="Maggie's Room">
-                    </a>
-                </div>
-            </div> <!-- End of Second Row -->
-        </div> <!-- End of Main Area-->
-    </body>
+    <div class="smallContainer">
+        <div id="singleImageView" class="hidden">
+            <img id="singleImage" src="" alt="Selected">
+        </div>
+    </div>
+</body>
 </html>

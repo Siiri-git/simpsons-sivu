@@ -1,7 +1,7 @@
 const singleImgs = document.querySelectorAll(".singleImg");
 const singleImageView = document.getElementById("singleImageView");
 const singleImage = document.getElementById("singleImage");
-const galleryContainer = document.getElementById("gallery");
+const galleryContainer = document.getElementById("mainContainer");
 const backBtn = document.getElementById("backBtn");
 
 // When clicking an image → switch to single-image mode

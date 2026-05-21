@@ -89,7 +89,6 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
 }
     /* Images */
 .galleryContainer div img {

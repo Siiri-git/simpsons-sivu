@@ -87,19 +87,23 @@ header h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #FFFFFF;
+    border: #FFFFFF solid;    
 }
 .galleryContainer div {
     width: 40%;
     height: auto;
     text-align: center;
 }
+.galleryContainer div:hover {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    border: solid #FFFFFF;
+}
 .imgContainer {
     display: flex;
     flex-direction: column;
-    border-style: solid;
-    border-width: 0.2em 0.3em 0.2em 0.3em;
-    border-color: #FFFFFF;
-    background-color: #FFFFFF;
 }
 .imgContainer img {
     width: 100%;

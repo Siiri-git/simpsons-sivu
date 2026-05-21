@@ -94,12 +94,12 @@ header h1 {
     width: 40%;
     height: auto;
     text-align: center;
+    padding-top: 0vh;
+    padding-bottom: 0.5vh;
 }
 .galleryContainer div:hover {
-    width: 40%;
-    height: auto;
-    text-align: center;
-    border: solid #FFFFFF;
+    padding-top: 0.5vh;
+    padding-bottom: 0vh;
 }
 .imgContainer {
     display: flex;
@@ -110,9 +110,17 @@ header h1 {
     height: 100%;
     object-fit: contain;
 }
+h2 {
+    margin-left: 2em;
+    color: #E44423;
+}
 
 /* Adjust Layout depending on screen width */
 @media screen and (max-width: 600px) {
+    h2 {
+    margin-left: 0em;
+    text-align: center;
+    }
     .headContainer {
         align-items: center;
         flex-direction: column;

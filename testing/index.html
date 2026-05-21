@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords" content="The Simpsons, Simpsons, wiki, fanwiki, locations, places">
+    <meta name="description" content="A fanwiki page with different locations from The Simpsons seriess.">
+    <meta name="author" content="Siiri">
+
+    <title>Springfield Page</title>
+
+    <link rel="stylesheet" href="springfield.css">
+    <script src="springfield.js" defer></script>
+</head>
+<body>
+
+<header class="headContainer">
+        <div id="logoContainer">
+            <a href="/home.html">
+                <img src="/images/logo.png" alt="simpsons logo">
+            </a>
+        </div>
+        <h1>The Simpsons Page</h1>
+    </header>
+    <nav class="navContainer">
+        <a class="active" href="./springfield.html">Springfield</a>
+        <a href="/characters/characters.html">Characters</a>
+        <a href="/forum/html/forum.html">Forum</a>
+    </nav> 
+
+    <!-- Back button (hidden by default) -->
+    <button id="backBtn" class="hidden">← Back</button>
+
+    <div class="mainContainer"> <!-- Main Content -->
+        <div id="firstView">
+            <div class="galleryContainer"> <!-- 1st Row of Images -->
+                <div class="imgContainer">
+                    <img src="/images/simpsons_house/thehouse.jpg" class="singleImg" alt="house">
+                </div>
+
+                <div class="imgContainer">
+                    <img src="/images/moes_tavern/moestavern.png" class="singleImg" alt="moes">
+                </div>
+
+                <div class="imgContainer">
+                    <img src="/images/kwik_e_mart/frontkwikemart.png" class="singleImg" alt="kwikEmart">
+                </div>
+            </div> <!-- End of 1st Row of Images -->
+            <div class="galleryContainer"> <!-- 2nd Row of Images -->
+                <div class="imgContainer">
+                    <img src="/images/simpsons_house/thehouse.jpg" class="singleImg" alt="house">
+                </div>
+
+                <div class="imgContainer">
+                    <img src="/images/moes_tavern/moestavern.png" class="singleImg" alt="moes">
+                </div>
+
+                <div class="imgContainer">
+                    <img src="/images/kwik_e_mart/frontkwikemart.png" class="singleImg" alt="kwikEmart">
+                </div>
+            </div> <!-- End of 2nd Row of Images -->
+        </div>
+        <div id="singleImageView" class="hidden"> <!-- Single Image View -->
+            <img id="singleImage" src="" alt="Selected">
+        </div>
+    </div> <!-- End Of Main Content -->
+
+</body>
+</html>

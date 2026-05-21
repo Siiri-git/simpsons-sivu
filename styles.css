@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    margin: 0;
+    height: 100vh;
+    background: #FCCB00;
+    overflow-y: scroll;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    margin: 1em;
+    gap: 1em;
+}
+
+.container {
+    flex: 70%;
+    background-color: #5C9ED9;
+}
+#view {
+    background-color: #FFFFFF;
+    border: #1769B6 solid;
+}
+.sideImage {
+    flex: 30%;
+    background-color: #5C9ED9;
+    border: solid #1769B6;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: #E44423;
+}
+#infoButton {
+    height: 2em;
+    width: 8em;
+    background-color: #FCCB00;
+    border-radius: 0;
+    border: solid #000000;
+    text-align: center;
+}
+#memeButton {
+    height: 2em;
+    width: 8em;
+    background-color: #FCCB00;
+    border-radius: 0;
+    border: solid #000000;
+    text-align: center;
+}

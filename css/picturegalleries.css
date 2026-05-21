@@ -80,6 +80,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: #FFFFFF;
 }
     /* Image Content Rows */
 .galleryContainer {
@@ -115,7 +116,7 @@ header h1 {
 }
     /* Text */
 h2 {
-    margin-left: 2em;
+    margin-left: 0.5em;
     color: #E44423;
 }
 

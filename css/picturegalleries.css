@@ -81,27 +81,29 @@ header h1 {
     flex-direction: column;
     flex-wrap: wrap;
 }
+    /* Image Content Rows */
 .galleryContainer {
     flex: 100%;
     gap: 0.5em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #FFFFFF;
-    border: #FFFFFF solid;    
+
 }
-.galleryContainer div {
+    /* Images */
+.galleryContainer div img {
+    padding-top: 0vh;
+    padding-bottom: 0.5vh;    
+}
+.galleryContainer div img:hover {
+    padding-top: 0.5vh;
+    padding-bottom: 0vh;  
+}
+    /* Image Container */
+.imgContainer {
     width: 40%;
     height: auto;
     text-align: center;
-    padding-top: 0vh;
-    padding-bottom: 0.5vh;
-}
-.galleryContainer div:hover {
-    padding-top: 0.5vh;
-    padding-bottom: 0vh;
-}
-.imgContainer {
     display: flex;
     flex-direction: column;
 }
@@ -110,6 +112,7 @@ header h1 {
     height: 100%;
     object-fit: contain;
 }
+    /* Text */
 h2 {
     margin-left: 2em;
     color: #E44423;
@@ -142,10 +145,5 @@ h2 {
         width: 90%;
         height: auto;
         text-align: center;
-    }
-    .imgContainer {
-        border-width: 0.35em 0.35em 0.1em 0.35em;
-        border-color: #FFFFFF;
-        background-color: #FFFFFF;
     }
 }

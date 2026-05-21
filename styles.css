@@ -9,32 +9,124 @@ body {
     overflow-y: scroll;
 }
 
+/* Header Stuff */
+header {
+    background-color: #5C9ED9;
+    padding: 0.5em;
+    text-align: center;
+}
+header h1 {
+    color: #FFFFFF;
+}
+.headContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    flex-wrap: row wrap;
+}
+#logoContainer {
+    width: 10em;
+    height: 5em;
+}
+#logoContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Top navigation bar */
+.navContainer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #5C9ED9;
+    border-style: solid none solid none;
+    border-color: #1769B6;
+    flex-wrap: wrap;
+}
+.navContainer a {
+    color: #FFFFFF;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 20%;
+    text-decoration: none;
+    text-align: center;
+}
+.navContainer a:hover {
+    background-color: #1769B6;
+    color: #FFFFFF;
+}
+.navContainer .active {
+    background-color: #1769B6;
+    color: #FFFFFF;
+}
+
+/* Main Content (left image and right view) */
 .mainContainer {
     display: flex;
     flex-direction: row;
-    background-color: #FFFFFF;
+    background-color: #FCCB00;
     margin: 1em;
     gap: 1em;
 }
 
+/* Main View (the stuff on the right side) */
 .container {
     flex: 70%;
-    background-color: #5C9ED9;
+    background-color: #FCCB00;
 }
+    /* Shown Content ^^ */
 #view {
     background-color: #FFFFFF;
     border: #1769B6 solid;
-}
-.sideImage {
-    flex: 30%;
-    background-color: #5C9ED9;
-    border: solid #1769B6;
+    padding: 0.5em;
 }
 
+/* Voice Actor Content */
+.voiceActor {
+    background-color: #5C9ED9;
+    display: flex;
+    flex-direction: row;
+
+}
+#vaName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0.5em;
+}
+.voiceActor p {
+    justify-content: center;
+    align-items: center;
+}
+#vaContainer {
+    background-color: #E44423;
+    border: solid;
+    width: 5em;
+    height: 5em;
+}
+#vaContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Side Image */
+.sideImage {
+    flex: 30%;
+    background-color: #FFFFFF;
+    border: solid #1769B6;
+}
+.sideImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Buttons */
 .buttonContainer {
     display: flex;
     flex-direction: row;
-    background-color: #E44423;
+    background-color: #FCCB00;
 }
 #infoButton {
     height: 2em;
@@ -51,4 +143,83 @@ body {
     border-radius: 0;
     border: solid #000000;
     text-align: center;
+}
+
+/* Hidden Content */
+.hidden {
+    display: none !important;
+}
+
+/* Adjust Layout depending on screen width */
+@media screen and (max-width: 500px) {
+    .headContainer {
+        align-items: center;
+        flex-direction: column;
+    }
+    .navContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navContainer a {
+        width: 100%;
+    }
+}
+
+/* Meme View Content */
+.galleryContainer {
+    flex: 100%;
+    gap: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+    /* Images */
+.galleryContainer div img {
+    padding-top: 0vh;
+    padding-bottom: 0.5vh;    
+}
+.galleryContainer div img:hover {
+    padding-top: 0.5vh;
+    padding-bottom: 0vh;  
+}
+
+    /* Image Container */
+.imgContainer {
+    width: 40%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* View Singular Meme */
+#singleImageView {
+    flex: 100%;
+    gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#singleImage{
+    width: 100%;
+    max-height: fit-content;
+    object-fit: contain;
+    border: 3em #FCCB00;
+    border-style: none none solid none;
+}
+.smallContainer {
+    padding: 0.5em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }

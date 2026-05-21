@@ -15,9 +15,21 @@
     </head>
 
     <body>
+        <header class="headContainer">
+            <div id="logoContainer">
+                <img src="/images/logo.png" alt="simpsons logo">
+            </div>
+            <h1>The Simpsons Page</h1>
+        </header>
+        <nav class="navContainer">
+            <a href="/springfield/springfield.html">Springfield</a>
+            <a href="/characters/characters.html">Characters</a>
+            <a href="/forum/html/forum.html">Forum</a>
+        </nav>
+
         <div class="mainContainer"> <!-- Start of Main Container -->
             <div class="sideImage">
-                <img src="" alt="image">
+                <img src="/images/characters/Imagemoe.webp" alt="image">
             </div>
 
             <div class="container">
@@ -25,9 +37,61 @@
                     <button id="infoButton">Info</button>
                     <button id="memeButton">Memes</button>
                 </div>
-                <div id="view">
-                    meow
-                </div>
+                <div id="view"> <!-- Start of View -->
+                    <div id="infoView" class=""> <!-- Start of Info View -->
+                        <p><b>Character Name</b></p>
+                        <p>Character Description</p>
+                        <audio controls>
+                            <source src="horse.ogg" type="audio/ogg">
+                            Your browser does not support the audio element
+                        </audio>
+                        <div class="voiceActor"> <!-- Voice Actor Info -->
+                            <div id="vaContainer">
+                                <img src="" alt="va">
+                            </div>
+                            <div id="vaName">
+                                <p>VA name</p>
+                            </div>
+                        </div>  <!-- End of Voice Actor Info -->
+                    </div> <!-- End of Info View -->
+
+                    <div id="memeView" class="hidden"> <!-- Start of Meme View -->
+                        <div class="galleryContainer"> <!-- 1st Row of Images -->
+                            <div class="imgContainer">
+                                <img src="/images/simpsons_house/mastbedroom.jpg" class="singleImg" alt="masterbedroom">
+                            </div>
+
+                            <div class="imgContainer">
+                                <img src="/images/simpsons_house/bartsroom.png" class="singleImg" alt="bartsroom">
+                            </div>
+
+                            <div class="imgContainer">
+                                <img src="/images/simpsons_house/lisasroom.jpg" class="singleImg" alt="lisasroom">
+                            </div>
+                        </div> <!-- End of 1st Row of Images -->
+                        <div class="galleryContainer"> <!-- 2nd Row of Images -->
+                            <div class="imgContainer">
+                                <img src="/images/simpsons_house/mastbedroom.jpg" class="singleImg" alt="masterbedroom">
+                            </div>
+
+                            <div class="imgContainer">
+                                <img src="/images/simpsons_house/bartsroom.png" class="singleImg" alt="bartsroom">
+                            </div>
+
+                            <div class="imgContainer">
+                                <img src="/images/simpsons_house/lisasroom.jpg" class="singleImg" alt="lisasroom">
+                            </div>
+                        </div> <!-- End of 2nd Row of Images -->
+                    </div> <!-- End of Meme View -->
+
+                    <div id="singularMeme" class="hidden"> <!-- Start of Singular Meme View -->
+                        <div class="smallContainer">
+                            <div id="singleImageView">
+                                <img id="singleImage" src="" alt="Selected">
+                            </div>
+                        </div>
+                    </div> <!-- End of Singular Meme View -->
+                </div> <!-- End of View -->
             </div>
         </div> <!-- End of Main Container -->
     </body>

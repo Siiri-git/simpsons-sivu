@@ -4,12 +4,12 @@ const singleImage = document.getElementById("singleImage");
 const galleryContainer = document.getElementById("mainContainer");
 const backBtn = document.getElementById("backBtn");
 
-// When clicking an image → switch to single-image mode
+// When clicking an image switch to single-image mode
 singleImgs.forEach(img => {
     img.addEventListener("click", () => {
         singleImage.src = img.src;
 
-        // Hide grid + banner + nav
+        // Hide grid
         galleryContainer.classList.add("hidden");
 
         // Show single image + back button
@@ -18,7 +18,7 @@ singleImgs.forEach(img => {
     });
 });
 
-// Back button → restore original view
+// Back button to restore original view
 backBtn.addEventListener("click", () => {
     singleImageView.classList.add("hidden");
     backBtn.classList.add("hidden");

@@ -1,3 +1,5 @@
+// omg näitten js juttuje tekoon meni liikaa aikaa sekosin enkä nukkunu en muista mitään ääähhhh
+
 (function () {
     'use strict';
 

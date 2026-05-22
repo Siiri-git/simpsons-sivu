@@ -194,14 +194,14 @@ header h1 {
     color: #5C9ED9;
 }
 .vaImgContainer {
-    width: 4.5em;
-    height: 4.5em;
+    width: 5em;
+    height: 5em;
     border: #E44423 solid;
 }
 .vaImgContainer img {
-    width: 4em;
-    height: 4em;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Memes Grid View */

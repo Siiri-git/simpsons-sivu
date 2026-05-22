@@ -5,12 +5,12 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'Homer Facepalm', src: '/images/characters/marge/memes/cornfield.jpg' },
-        { id: 'm2', title: 'Bart Skate', src: '/images/characters/marge/memes/dance.jpg' },
-        { id: 'm3', title: 'Marge Smile', src: '/images/characters/marge/memes/dance_gif.gif' },
-        { id: 'm4', title: 'Lisa Sax', src: '/images/characters/marge/memes/mob_wife_marge.jpg' },
-        { id: 'm5', title: 'Mr Burns', src: '/images/characters/marge/memes/neat_potato.jpg' },
-        { id: 'm6', title: 'Krusty Laugh', src: '/images/characters/marge/memes/sideeye.jpg' }
+        { id: 'm1', title: 'cornfield', src: '/images/characters/marge/memes/cornfield.jpg' },
+        { id: 'm2', title: 'dance', src: '/images/characters/marge/memes/dance.jpg' },
+        { id: 'm3', title: 'dance gif', src: '/images/characters/marge/memes/dance_gif.gif' },
+        { id: 'm4', title: 'mob wife', src: '/images/characters/marge/memes/mob_wife_marge.jpg' },
+        { id: 'm5', title: 'neat potatoes', src: '/images/characters/marge/memes/neat_potato.jpg' },
+        { id: 'm6', title: 'side eye', src: '/images/characters/marge/memes/sideeye.jpg' }
     ];
 
     /*** DOM references ***/

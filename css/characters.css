@@ -186,6 +186,13 @@ header h1 {
     margin-right: 1em;
     align-items: center;
 }
+.vaNameContainer a {
+    text-decoration: none;
+    color: #000000;
+}
+.vaNameContainer a:hover {
+    color: #5C9ED9;
+}
 .vaImgContainer {
     width: 4.5em;
     height: 4.5em;

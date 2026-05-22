@@ -4,11 +4,11 @@
     // Meme Data
     const MEMES = [
         { id: 'm1', title: 'Homer Facepalm', src: '/images/characters/homer/memes/himoläskihomer.jpg' },
-        { id: 'm2', title: 'Bart Skate', src: '/images/characters/homer/memes/himoläskihomer.jpg' },
-        { id: 'm3', title: 'Marge Smile', src: '/images/characters/homer/memes/himoläskihomer.jpg' },
-        { id: 'm4', title: 'Lisa Sax', src: '/images/characters/homer/memes/himoläskihomer.jpg' },
-        { id: 'm5', title: 'Mr Burns', src: '/images/characters/homer/memes/himoläskihomer.jpg' },
-        { id: 'm6', title: 'Krusty Laugh', src: '/images/characters/homer/memes/himoläskihomer.jpg' }
+        { id: 'm2', title: 'Bart Skate', src: '/images/characters/homer/memes/bush.jpg' },
+        { id: 'm3', title: 'Marge Smile', src: '/images/characters/homer/memes/monke.jpg' },
+        { id: 'm4', title: 'Lisa Sax', src: '/images/characters/homer/memes/ringdoorcam.jpg' },
+        { id: 'm5', title: 'Mr Burns', src: '/images/characters/homer/memes/sugoii.jpg' },
+        { id: 'm6', title: 'Krusty Laugh', src: '/images/characters/homer/memes/tuff.jpg' }
     ];
 
     /*** DOM references ***/

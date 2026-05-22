@@ -4,12 +4,12 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'Homer Facepalm', src: '' },
-        { id: 'm2', title: 'Bart Skate', src: '' },
-        { id: 'm3', title: 'Marge Smile', src: '' },
-        { id: 'm4', title: 'Lisa Sax', src: '' },
-        { id: 'm5', title: 'Mr Burns', src: '' },
-        { id: 'm6', title: 'Krusty Laugh', src: '' }
+        { id: 'm1', title: 'grinny', src: '/images/characters/moe/memes/grinny.jpg' },
+        { id: 'm2', title: 'little lamb', src: '/images/characters/moe/memes/litte_lamb.jpg' },
+        { id: 'm3', title: 'perv moe', src: '/images/characters/moe/memes/perv.jpg' },
+        { id: 'm4', title: 'pointer', src: '/images/characters/moe/memes/pointer.jpg' },
+        { id: 'm5', title: 'sugoi kawaii', src: '/images/characters/moe/memes/sugoiii.jpg' },
+        { id: 'm6', title: 'why dis so mad', src: '/images/characters/moe/memes/whydissomad.jpg' }
     ];
 
     /*** DOM references ***/

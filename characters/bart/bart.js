@@ -5,12 +5,12 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'Homer Facepalm', src: '' },
-        { id: 'm2', title: 'Bart Skate', src: '' },
-        { id: 'm3', title: 'Marge Smile', src: '' },
-        { id: 'm4', title: 'Lisa Sax', src: '' },
-        { id: 'm5', title: 'Mr Burns', src: '' },
-        { id: 'm6', title: 'Krusty Laugh', src: '' }
+        { id: 'm1', title: 'barat', src: '/images/characters/bart/memes/barat.jpg' },
+        { id: 'm2', title: 'hi', src: '/images/characters/bart/memes/hi.jpg' },
+        { id: 'm3', title: 'lil bart', src: '/images/characters/bart/memes/lil_bart.jpg' },
+        { id: 'm4', title: 'NOT boobs', src: '/images/characters/bart/memes/not_boobies.gif' },
+        { id: 'm5', title: 'sit down man', src: '/images/characters/bart/memes/sit.jpg' },
+        { id: 'm6', title: 'rhubar bar', src: '/images/characters/bart/memes/soniononion.jpg' }
     ];
 
     /*** DOM references ***/

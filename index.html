@@ -1,98 +1,73 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <meta name="keywords" content="The Simpsons, Simpsons, wiki, fanwiki, info">
-        <meta name="description" content="">
+        <meta name="keywords" content="The Simpsons, Simpsons, wiki, fanwiki, locations, places">
+        <meta name="description" content="A fanwiki page with different locations from The Simpsons seriess.">
         <meta name="author" content="Siiri">
 
-        <title>The Simpsons Page</title>
+        <title>Springfield Page</title>
 
-        <script src="/script.js"></script>
         <link rel="stylesheet" href="/styles.css">
+        <script src="/script.js" defer></script>
     </head>
-
     <body>
         <header class="headContainer">
             <div id="logoContainer">
-                <img src="/images/logo.png" alt="simpsons logo">
+                <a href="/home.html">
+                    <img src="/images/logo.png" alt="simpsons logo">
+                </a>
             </div>
             <h1>The Simpsons Page</h1>
         </header>
         <nav class="navContainer">
-            <a href="/springfield/springfield.html">Springfield</a>
-            <a href="/characters/characters.html">Characters</a>
+            <a href="../springfield.html">Springfield</a>
+            <a class="active" href="/characters/characters.html">Characters</a>
             <a href="/forum/html/forum.html">Forum</a>
         </nav>
 
-        <div class="mainContainer"> <!-- Start of Main Container -->
-            <div class="sideImage">
-                <img src="/images/characters/Imagemoe.webp" alt="image">
-            </div>
+        <div id="main"> <!-- Of Main -->
+            <div id="contentLeft"> <!-- Left Side -->
+                <img src="" alt="graah">
+            </div> <!-- Left Side End -->
 
-            <div class="container">
-                <div class="buttonContainer">
-                    <button id="infoButton">Info</button>
-                    <button id="memeButton">Memes</button>
+            <div id="contentRight"> <!-- Right Side -->
+                <div id="tabs">
+                    <button id="tabInfo" class="tabBtn">Info</button>
+                    <button id="tabMemes" class="tabBtn">Memes</button>
                 </div>
-                <div id="view"> <!-- Start of View -->
-                    <div id="infoView" class=""> <!-- Start of Info View -->
-                        <p><b>Character Name</b></p>
-                        <p>Character Description</p>
-                        <audio controls>
-                            <source src="horse.ogg" type="audio/ogg">
-                            Your browser does not support the audio element
-                        </audio>
-                        <div class="voiceActor"> <!-- Voice Actor Info -->
-                            <div id="vaContainer">
-                                <img src="" alt="va">
-                            </div>
-                            <div id="vaName">
-                                <p>VA name</p>
-                            </div>
-                        </div>  <!-- End of Voice Actor Info -->
-                    </div> <!-- End of Info View -->
 
-                    <div id="memeView" class="hidden"> <!-- Start of Meme View -->
-                        <div class="galleryContainer"> <!-- 1st Row of Images -->
-                            <div class="imgContainer">
-                                <img src="/images/simpsons_house/mastbedroom.jpg" class="singleImg" alt="masterbedroom">
-                            </div>
-
-                            <div class="imgContainer">
-                                <img src="/images/simpsons_house/bartsroom.png" class="singleImg" alt="bartsroom">
-                            </div>
-
-                            <div class="imgContainer">
-                                <img src="/images/simpsons_house/lisasroom.jpg" class="singleImg" alt="lisasroom">
-                            </div>
-                        </div> <!-- End of 1st Row of Images -->
-                        <div class="galleryContainer"> <!-- 2nd Row of Images -->
-                            <div class="imgContainer">
-                                <img src="/images/simpsons_house/mastbedroom.jpg" class="singleImg" alt="masterbedroom">
-                            </div>
-
-                            <div class="imgContainer">
-                                <img src="/images/simpsons_house/bartsroom.png" class="singleImg" alt="bartsroom">
-                            </div>
-
-                            <div class="imgContainer">
-                                <img src="/images/simpsons_house/lisasroom.jpg" class="singleImg" alt="lisasroom">
-                            </div>
-                        </div> <!-- End of 2nd Row of Images -->
-                    </div> <!-- End of Meme View -->
-
-                    <div id="singularMeme" class="hidden"> <!-- Start of Singular Meme View -->
-                        <div class="smallContainer">
-                            <div id="singleImageView">
-                                <img id="singleImage" src="" alt="Selected">
-                            </div>
+                <div id="infoView" class="view">
+                    <h2>Full name</h2>
+                    <p>Lorem ipsum dolor sit amet...</p>
+                    <br>
+                    <div class="soundBtns">
+                        <button>Sound clip 1</button>
+                        <button>Sound clip 2</button>
+                        <button>Sound clip 3</button>
+                    </div>
+                    <br>
+                    <div class="voiceActor">
+                        <div class="vaImgContainer">
+                            <img src="" alt="va">
                         </div>
-                    </div> <!-- End of Singular Meme View -->
-                </div> <!-- End of View -->
-            </div>
-        </div> <!-- End of Main Container -->
+                        <div class="vaNameContainer">
+                            <p>Full Name</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="memesView" class="view">
+                    <div id="memesGrid"></div>
+                </div>
+
+                <div id="singleView" class="view">
+                    <button id="memeBackBtn">&lt; Back</button>
+                    <div id="singleMemeContainer"></div>
+                </div>
+            </div> <!-- Right Side End -->
+        </div> <!-- Main End -->
     </body>
 </html>

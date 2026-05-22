@@ -1,15 +1,16 @@
+/* Reset / base */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box; 
 }
 body {
-    font-family: Arial;
+    height: 100%;
     margin: 0;
-    height: 100vh;
-    background: #FCCB00;
-    overflow-y: scroll;
+    font-family: Arial;
+    background: #1769B6;
+    color: #222;
 }
 
-/* Header Stuff */
+/* Header */
 header {
     background-color: #5C9ED9;
     padding: 0.5em;
@@ -60,166 +61,234 @@ header h1 {
     color: #FFFFFF;
 }
 
-/* Main Content (left image and right view) */
-.mainContainer {
+#main {
+    padding: 0.5em;
     display: flex;
     flex-direction: row;
     background-color: #FCCB00;
-    margin: 1em;
     gap: 1em;
 }
 
-/* Main View (the stuff on the right side) */
-.container {
-    flex: 70%;
-    background-color: #FCCB00;
-}
-    /* Shown Content ^^ */
-#view {
-    background-color: #FFFFFF;
-    border: #1769B6 solid;
-    padding: 0.5em;
-}
-
-/* Voice Actor Content */
-.voiceActor {
-    background-color: #5C9ED9;
-    display: flex;
-    flex-direction: row;
-
-}
-#vaName {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 0.5em;
-}
-.voiceActor p {
-    justify-content: center;
-    align-items: center;
-}
-#vaContainer {
-    background-color: #E44423;
-    border: solid;
-    width: 5em;
-    height: 5em;
-}
-#vaContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
 /* Side Image */
-.sideImage {
+#contentLeft {
     flex: 30%;
+    height: 80vh;
     background-color: #FFFFFF;
     border: solid #1769B6;
 }
-.sideImage img {
+#contentLeft img {
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
-/* Buttons */
-.buttonContainer {
-    display: flex;
-    flex-direction: row;
-    background-color: #FCCB00;
-}
-#infoButton {
-    height: 2em;
-    width: 8em;
-    background-color: #FCCB00;
-    border-radius: 0;
-    border: solid #000000;
-    text-align: center;
-}
-#memeButton {
-    height: 2em;
-    width: 8em;
-    background-color: #FCCB00;
-    border-radius: 0;
-    border: solid #000000;
-    text-align: center;
-}
-
-/* Hidden Content */
-.hidden {
-    display: none !important;
-}
-
-/* Adjust Layout depending on screen width */
-@media screen and (max-width: 500px) {
-    .headContainer {
-        align-items: center;
-        flex-direction: column;
-    }
-    .navContainer {
-        flex-direction: column;
-        align-items: center;
-    }
-    .navContainer a {
-        width: 100%;
-    }
-}
-
-/* Meme View Content */
-.galleryContainer {
-    flex: 100%;
-    gap: 0.5em;
-    margin-bottom: 1em;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-}
-    /* Images */
-.galleryContainer div img {
-    padding-top: 0vh;
-    padding-bottom: 0.5vh;    
-}
-.galleryContainer div img:hover {
-    padding-top: 0.5vh;
-    padding-bottom: 0vh;  
-}
-
-    /* Image Container */
-.imgContainer {
-    width: 40%;
-    height: auto;
-    text-align: center;
+/* Page container (example wrapper) */
+#contentRight {
+    flex: 70%;
     display: flex;
     flex-direction: column;
-}
-.imgContainer img {
+    gap: 0.5em;
     width: 100%;
-    height: 100%;
-    object-fit: contain;
+    margin: auto;
+    background: #ffffff;
 }
 
-/* View Singular Meme */
-#singleImageView {
-    flex: 100%;
-    gap: 0.5em;
+/* Tabs row */
+#tabs {
+    background-color: #FCCB00;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
 }
-#singleImage{
-    width: 100%;
-    max-height: fit-content;
-    object-fit: contain;
-    border: 3em #FCCB00;
-    border-style: none none solid none;
+
+/* Tab buttons */
+.tabBtn {
+    border: solid #1769B6;
+    background: transparent;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: #5C9ED9;
+    font-size: 1.1em;
 }
-.smallContainer {
-    padding: 0.5em;
-    margin: 1em;
+.tabBtn:hover {
+    background-color: #1769B6;
+}
+.tabBtn.active {
+    background: #1769B6;
+    color: #FFFFFF;
+}
+
+/* Main Views Container */
+.view {
+    display: none; /* JS Toggles Display */
+    width: 100%;
+}
+
+/* Info / Memes / Single View Shared Layout */
+#infoView, #memesView, #singleView {
+    display: none;
+    padding: 1em;
+}
+
+/* Info view content */
+#infoView {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Right Content Box */
+#infoView .content-right, #memesView .content-right {
+    flex: 1 1 300px;
+    min-width: 260px;
     display: flex;
     flex-direction: column;
+    gap: 1em;
+}
+
+/* Info Headings And Text */
+#infoView h2 {
+    margin: 0;
+    font-size: 20px;
+    color: #E44423;
+}
+#infoView p {
+    margin: 0;
+    color: #000000;
+    line-height: 1.45;
+}
+
+/* Sound Buttons Row */
+.soundBtns {
+    display: flex;
+    gap: 8px;
     flex-wrap: wrap;
+}
+.soundBtns button {
+    padding: 0.5em 1em;
+    border: solid #1769B6;
+    background: #CDDF8D;
+    cursor: pointer;
+    font-weight: 600;
+    color: #1769B6;
+}
+.soundBtns button:hover { 
+    transform: translateY(+1px); 
+}
+.voiceActor {
+    display: flex;
+    flex-direction: row;
+}
+.vaNameContainer {
+    display: flex;
+    margin-left: 1.5em;
+    margin-right: 1em;
+    align-items: center;
+}
+.vaImgContainer {
+    width: 4.5em;
+    height: 4.5em;
+    border: #E44423 solid;
+}
+.vaImgContainer img {
+    width: 4em;
+    height: 4em;
+    object-fit: contain;
+}
+
+/* Memes Grid View */
+#memesView {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#memesGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Memes Grid Container */
+#memesGrid .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    flex-direction: row;
+}
+
+/* Meme Tile (button) */
+.memeTile {
+    appearance: none;
+    border: solid #E44423;
+    background: #fff;
+    padding: 0;
+    flex: 30%;
+    height: max-content;
+    min-width: 160px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: left;
+}
+.memeTile:hover {
+    transform: translateY(+0.2em);
+}
+
+/* Thumbnail Inside Tile */
+.memeThumb {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Single Meme View */
+#singleView {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#memeBackBtn {
+    color: #FFFFFF;
+    align-self: flex-start;
+    padding: 1em 1.5em;
+    font-size: 1em;
+    border-radius: 6px;
+    border: solid #1769B6;
+    background: #5C9ED9;
+    cursor: pointer;
+    margin-bottom: 1em;  
+}
+#memeBackBtn:hover {
+    color: #FFFFFF;
+    transform: translateY(+0.2em);
+    background: #1769B6;
+}
+
+/* Single Meme Container */
+.singleMeme {
+    display: flex;
+    gap: 1em;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.singleMemeImg {
+    width: 100%;
+    height: auto;
+    border: solid #E44423;
+    object-fit: contain;
+}
+
+/* Utility Classes */
+.hidden { 
+    display: none !important; 
+}
+.center { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
 }

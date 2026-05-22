@@ -5,12 +5,12 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'Homer Facepalm', src: '' },
-        { id: 'm2', title: 'Bart Skate', src: '' },
-        { id: 'm3', title: 'Marge Smile', src: '' },
-        { id: 'm4', title: 'Lisa Sax', src: '' },
-        { id: 'm5', title: 'Mr Burns', src: '' },
-        { id: 'm6', title: 'Krusty Laugh', src: '' }
+        { id: 'm1', title: 'asses', src: '/images/characters/apu/memes/asses.jpg' },
+        { id: 'm2', title: 'attempt', src: '/images/characters/apu/memes/attempt.jpg' },
+        { id: 'm3', title: 'chill guy', src: '/images/characters/apu/memes/cill_guy.jpg' },
+        { id: 'm4', title: 'close up', src: '/images/characters/apu/memes/close_up.jpg' },
+        { id: 'm5', title: 'dance', src: '/images/characters/apu/memes/dance.gif' },
+        { id: 'm6', title: 'dream', src: '/images/characters/apu/memes/dream.jpg' }
     ];
 
     /*** DOM references ***/

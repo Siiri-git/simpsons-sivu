@@ -5,12 +5,12 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'Homer Facepalm', src: '' },
-        { id: 'm2', title: 'Bart Skate', src: '' },
-        { id: 'm3', title: 'Marge Smile', src: '' },
-        { id: 'm4', title: 'Lisa Sax', src: '' },
-        { id: 'm5', title: 'Mr Burns', src: '' },
-        { id: 'm6', title: 'Krusty Laugh', src: '' }
+        { id: 'm1', title: 'queen', src: '/images/characters/mrburns/memes/queen.gif' },
+        { id: 'm2', title: 'marilyn', src: '/images/characters/mrburns/memes/marilyn.jpg' },
+        { id: 'm3', title: 'aahhh', src: '/images/characters/mrburns/memes/aahh.jpg' },
+        { id: 'm4', title: 'food order', src: '/images/characters/mrburns/memes/food_order.jpg' },
+        { id: 'm5', title: 'alien', src: '/images/characters/mrburns/memes/alien.gif' },
+        { id: 'm6', title: 'gay jumpscare', src: '/images/characters/mrburns/memes/gay_jumpscare.jpg' }
     ];
 
     /*** DOM references ***/

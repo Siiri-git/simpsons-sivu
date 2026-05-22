@@ -5,12 +5,12 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'Homer Facepalm', src: '' },
-        { id: 'm2', title: 'Bart Skate', src: '' },
-        { id: 'm3', title: 'Marge Smile', src: '' },
-        { id: 'm4', title: 'Lisa Sax', src: '' },
-        { id: 'm5', title: 'Mr Burns', src: '' },
-        { id: 'm6', title: 'Krusty Laugh', src: '' }
+        { id: 'm1', title: 'heehehaa', src: '/images/characters/lisa/memes/heehehaa.jpg' },
+        { id: 'm2', title: 'psycho', src: '/images/characters/lisa/memes/psycho.jpg' },
+        { id: 'm3', title: 'doorbell cam', src: '/images/characters/lisa/memes/ring_doorbell_cam.jpg' },
+        { id: 'm4', title: 'sonion', src: '/images/characters/lisa/memes/sonion.jpg' },
+        { id: 'm5', title: 'lizaed queen', src: '/images/characters/lisa/memes/the_lizard_queen.jpg' },
+        { id: 'm6', title: 'whiteboard', src: '/images/characters/lisa/memes/whiteboard.jpg' }
     ];
 
     /*** DOM references ***/

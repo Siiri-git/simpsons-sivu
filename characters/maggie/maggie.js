@@ -5,12 +5,12 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'Homer Facepalm', src: '' },
-        { id: 'm2', title: 'Bart Skate', src: '' },
-        { id: 'm3', title: 'Marge Smile', src: '' },
-        { id: 'm4', title: 'Lisa Sax', src: '' },
-        { id: 'm5', title: 'Mr Burns', src: '' },
-        { id: 'm6', title: 'Krusty Laugh', src: '' }
+        { id: 'm1', title: 'Homer Facepalm', src: '/images/characters/maggie/memes/stupid_baby.jpg' },
+        { id: 'm2', title: 'Bart Skate', src: '/images/characters/maggie/memes/arrested.jpg' },
+        { id: 'm3', title: 'Marge Smile', src: '/images/characters/maggie/memes/dance.gif' },
+        { id: 'm4', title: 'Lisa Sax', src: '/images/characters/maggie/memes/gun.jpg' },
+        { id: 'm5', title: 'Mr Burns', src: '/images/characters/maggie/memes/manfyou.jpg' },
+        { id: 'm6', title: 'Krusty Laugh', src: '/images/characters/maggie/memes/star_onesie.jpg' }
     ];
 
     /*** DOM references ***/

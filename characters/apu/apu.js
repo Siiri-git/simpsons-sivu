@@ -5,15 +5,15 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'asses', src: '/characters/apu/meme1.jpg' },
-        { id: 'm2', title: 'attempt', src: '/characters/apu/meme2.jpg' },
+        { id: 'm1', title: 'asses', src: 'meme1.jpg' },
+        { id: 'm2', title: 'attempt', src: './characters/apu/meme2.jpg' },
         { id: 'm3', title: 'chill guy', src: '/images/characters/apu/memes/cill_guy.jpg' },
         { id: 'm4', title: 'close up', src: '/images/characters/apu/memes/close_up.jpg' },
         { id: 'm5', title: 'dance', src: '/images/characters/apu/memes/dance.gif' },
         { id: 'm6', title: 'dream', src: '/images/characters/apu/memes/dream.jpg' }
     ];
 
-    /*** DOM references ***/
+    /***references ***/
     const tabInfo = document.getElementById('tabInfo');
     const tabMemes = document.getElementById('tabMemes');
 
@@ -25,7 +25,7 @@
     const singleMemeContainer = document.getElementById('singleMemeContainer');
     const memeBackBtn = document.getElementById('memeBackBtn');
 
-    /*** Utility: show/hide views ***/
+    /*** show/hide views ***/
     function hideAllViews() {
         viewInfo.style.display = 'none';
         viewMemes.style.display = 'none';

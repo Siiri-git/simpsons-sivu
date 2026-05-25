@@ -1,16 +1,16 @@
 // omg näitten js juttuje tekoon meni liikaa aikaa sekosin enkä nukkunu en muista mitään ääähhhh
-
+// kunnon kommentointi mrburns.js tiedostossa!!
 (function () {
     'use strict';
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'barat', src: '/images/characters/bart/memes/barat.jpg' },
-        { id: 'm2', title: 'hi', src: '/images/characters/bart/memes/hi.jpg' },
-        { id: 'm3', title: 'lil bart', src: '/images/characters/bart/memes/lil_bart.jpg' },
-        { id: 'm4', title: 'NOT boobs', src: '/images/characters/bart/memes/not_boobies.gif' },
-        { id: 'm5', title: 'sit down man', src: '/images/characters/bart/memes/sit.jpg' },
-        { id: 'm6', title: 'rhubar bar', src: '/images/characters/bart/memes/soniononion.jpg' }
+        { id: 'm1', title: 'barat', src: '../characters/bart/meme1.jpg' },
+        { id: 'm2', title: 'hi', src: '../characters/bart/meme2.jpg' },
+        { id: 'm3', title: 'lil bart', src: '../characters/bart/meme3.jpg' },
+        { id: 'm4', title: 'NOT boobs', src: '../characters/bart/meme4.gif' },
+        { id: 'm5', title: 'sit down man', src: '../characters/bart/meme5.jpg' },
+        { id: 'm6', title: 'rhubar bar', src: '../characters/bart/meme6.jpg' }
     ];
 
     /*** DOM references ***/

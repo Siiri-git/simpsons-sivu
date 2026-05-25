@@ -3,17 +3,16 @@
 (function () {
     'use strict';
 
-    // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'queen', src: '/images/characters/mrburns/memes/queen.gif' },
-        { id: 'm2', title: 'marilyn', src: '/images/characters/mrburns/memes/marilyn.jpg' },
-        { id: 'm3', title: 'aahhh', src: '/images/characters/mrburns/memes/aahh.jpg' },
-        { id: 'm4', title: 'food order', src: '/images/characters/mrburns/memes/food_order.jpg' },
-        { id: 'm5', title: 'alien', src: '/images/characters/mrburns/memes/alien.gif' },
-        { id: 'm6', title: 'gay jumpscare', src: '/images/characters/mrburns/memes/gay_jumpscare.jpg' }
+        { id: 'm1', title: 'queen', src: '../characters/mrburns/meme1.jpg' },
+        { id: 'm2', title: 'marilyn', src: '../characters/mrburns/meme2.gif' },
+        { id: 'm3', title: 'aahhh', src: '../characters/mrburns/meme3.jpg' },
+        { id: 'm4', title: 'food order', src: '../characters/mrburns/meme4.jpg' },
+        { id: 'm5', title: 'alien', src: '../characters/mrburns/meme5.jpg' },
+        { id: 'm6', title: 'gay jumpscare', src: '../characters/mrburns/meme6.gif' }
     ];
 
-    /*** DOM references ***/
+    // DOM References 
     const tabInfo = document.getElementById('tabInfo');
     const tabMemes = document.getElementById('tabMemes');
 
@@ -25,7 +24,7 @@
     const singleMemeContainer = document.getElementById('singleMemeContainer');
     const memeBackBtn = document.getElementById('memeBackBtn');
 
-    /*** Utility: show/hide views ***/
+    // Show & Hide views
     function hideAllViews() {
         viewInfo.style.display = 'none';
         viewMemes.style.display = 'none';
@@ -55,7 +54,7 @@
         if (!meme) return;
         hideAllViews();
         viewSingle.style.display = 'block';
-        // Build single meme content
+        // Build Single Meme Content
         singleMemeContainer.innerHTML = '';
         const wrapper = document.createElement('div');
         wrapper.className = 'singleMeme';
@@ -71,7 +70,7 @@
         memeBackBtn.focus();
     }
 
-    /*** Render memes grid ***/
+    // Render Memes
     function renderMemesGrid() {
         memesGrid.innerHTML = '';
         const grid = document.createElement('div');
@@ -94,7 +93,7 @@
         memesGrid.appendChild(grid);
     }
 
-    /*** Event Handlers ***/
+    // Event Handlers
     tabInfo.addEventListener('click', function () {
         showInfoView();
     });
@@ -103,7 +102,7 @@
         showMemesGrid();
     });
 
-    // Delegate clicks inside memesGrid to open single meme
+    // Clicks Inside Mmes -> Open Single Meme :3
     memesGrid.addEventListener('click', function (e) {
         // Find closest memeTile button
         const tile = e.target.closest('.memeTile');
@@ -113,15 +112,15 @@
         showSingleMeme(id);
     });
 
-    // Back button from single meme to memes grid
+    // Back Button
     memeBackBtn.addEventListener('click', function () {
         showMemesGrid();
-        // Move focus to first meme tile for keyboard users
+        // Move Focus To First Meme Tile 4 Keyboard Users
         const firstTile = memesGrid.querySelector('.memeTile');
         if (firstTile) firstTile.focus();
     });
 
-    /*** Keyboard accessibility: allow Enter/Space to open tiles when focused ***/
+    // Allow Enter/Space To Open Tiles When In Focus
     memesGrid.addEventListener('keydown', function (e) {
         const tile = e.target.closest('.memeTile');
         if (!tile) return;
@@ -132,15 +131,15 @@
         }
     });
 
-    /*** Initialize on DOMContentLoaded (script loaded with defer recommended) ***/
+    // Initialize On DOMContentLoaded (script loaded with defer recommended)
     function init() {
-        // Render initial content if needed
+        // Render Initial Content If Needed
         renderMemesGrid();
-        // Show info view by default
+        // Show Info View By Default
         showInfoView();
     }
 
-    // If DOM already loaded (defer), init immediately; otherwise wait
+    // If DOM Already Loaded (defer), Initialize Immediately (otherwise wait :D)
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {

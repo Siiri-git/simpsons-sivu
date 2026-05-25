@@ -1,16 +1,16 @@
 // omg näitten js juttuje tekoon meni liikaa aikaa sekosin enkä nukkunu en muista mitään ääähhhh
-
+// kunnon kommentointi mrburns.js tiedostossa!!
 (function () {
     'use strict';
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'asses', src: 'meme1.jpg' },
-        { id: 'm2', title: 'attempt', src: './characters/apu/meme2.jpg' },
-        { id: 'm3', title: 'chill guy', src: '/images/characters/apu/memes/cill_guy.jpg' },
-        { id: 'm4', title: 'close up', src: '/images/characters/apu/memes/close_up.jpg' },
-        { id: 'm5', title: 'dance', src: '/images/characters/apu/memes/dance.gif' },
-        { id: 'm6', title: 'dream', src: '/images/characters/apu/memes/dream.jpg' }
+        { id: 'm1', title: 'asses', src: '../characters/apu/meme1.jpg' },
+        { id: 'm2', title: 'attempt', src: '../characters/apu/meme2.jpg' },
+        { id: 'm3', title: 'chill guy', src: '../characters/apu/meme3.jpg' },
+        { id: 'm4', title: 'close up', src: '../characters/apu/meme4.jpg' },
+        { id: 'm5', title: 'dance', src: '../characters/apu/meme5.gif' },
+        { id: 'm6', title: 'dream', src: '../characters/apu/meme6.jpg' }
     ];
 
     /***references ***/

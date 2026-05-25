@@ -1,19 +1,18 @@
-
 // omg näitten js juttuje tekoon meni liikaa aikaa sekosin enkä nukkunu en muista mitään ääähhhh
+// kunnon kommentointi mrburns.js tiedostossa!!
 (function () {
     'use strict';
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'Homer Facepalm', src: '/images/characters/homer/memes/himoläskihomer.jpg' },
-        { id: 'm2', title: 'Bart Skate', src: '/images/characters/homer/memes/bush.jpg' },
-        { id: 'm3', title: 'Marge Smile', src: '/images/characters/homer/memes/monke.jpg' },
-        { id: 'm4', title: 'Lisa Sax', src: '/images/characters/homer/memes/ringdoorcam.jpg' },
-        { id: 'm5', title: 'Mr Burns', src: '/images/characters/homer/memes/sugoii.jpg' },
-        { id: 'm6', title: 'Krusty Laugh', src: '/images/characters/homer/memes/tuff.jpg' }
+        { id: 'm1', title: 'Homer Facepalm', src: '../characters/homer/meme1.jpg' },
+        { id: 'm2', title: 'Bart Skate', src: '../characters/homer/meme2.jpg' },
+        { id: 'm3', title: 'Marge Smile', src: '../characters/homer/meme3.jpg' },
+        { id: 'm4', title: 'Lisa Sax', src: '../characters/homer/meme4.jpg' },
+        { id: 'm5', title: 'Mr Burns', src: '../characters/homer/meme5.jpg' },
+        { id: 'm6', title: 'Krusty Laugh', src: '../characters/homer/meme6.jpg' }
     ];
 
-    /*** DOM references ***/
     const tabInfo = document.getElementById('tabInfo');
     const tabMemes = document.getElementById('tabMemes');
 
@@ -25,7 +24,6 @@
     const singleMemeContainer = document.getElementById('singleMemeContainer');
     const memeBackBtn = document.getElementById('memeBackBtn');
 
-    /*** Utility: show/hide views ***/
     function hideAllViews() {
         viewInfo.style.display = 'none';
         viewMemes.style.display = 'none';
@@ -38,7 +36,6 @@
         hideAllViews();
         viewInfo.style.display = 'block';
         tabInfo.classList.add('active');
-        // Clear single meme container
         singleMemeContainer.innerHTML = '';
     }
 
@@ -46,7 +43,7 @@
         hideAllViews();
         viewMemes.style.display = 'block';
         tabMemes.classList.add('active');
-        // Render Grid If It's Empty
+
         if (!memesGrid.hasChildNodes()) renderMemesGrid();
     }
 
@@ -55,7 +52,7 @@
         if (!meme) return;
         hideAllViews();
         viewSingle.style.display = 'block';
-        // Build single meme content
+
         singleMemeContainer.innerHTML = '';
         const wrapper = document.createElement('div');
         wrapper.className = 'singleMeme';
@@ -71,7 +68,6 @@
         memeBackBtn.focus();
     }
 
-    /*** Render memes grid ***/
     function renderMemesGrid() {
         memesGrid.innerHTML = '';
         const grid = document.createElement('div');
@@ -94,7 +90,6 @@
         memesGrid.appendChild(grid);
     }
 
-    /*** Event Handlers ***/
     tabInfo.addEventListener('click', function () {
         showInfoView();
     });
@@ -103,7 +98,6 @@
         showMemesGrid();
     });
 
-    // Delegate clicks inside memesGrid to open single meme
     memesGrid.addEventListener('click', function (e) {
         // Find closest memeTile button
         const tile = e.target.closest('.memeTile');

@@ -1,19 +1,17 @@
 // omg näitten js juttuje tekoon meni liikaa aikaa sekosin enkä nukkunu en muista mitään ääähhhh
-
+// kunnon kommentointi mrburns.js tiedostossa!!
 (function () {
     'use strict';
 
-    // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'cornfield', src: '/images/characters/marge/memes/cornfield.jpg' },
-        { id: 'm2', title: 'dance', src: '/images/characters/marge/memes/dance.jpg' },
-        { id: 'm3', title: 'dance gif', src: '/images/characters/marge/memes/dance_gif.gif' },
-        { id: 'm4', title: 'mob wife', src: '/images/characters/marge/memes/mob_wife_marge.jpg' },
-        { id: 'm5', title: 'neat potatoes', src: '/images/characters/marge/memes/neat_potato.jpg' },
-        { id: 'm6', title: 'side eye', src: '/images/characters/marge/memes/sideeye.jpg' }
+        { id: 'm1', title: 'cornfield', src: '../characters/marge/meme1.jpg' },
+        { id: 'm2', title: 'dance', src: '../characters/marge/meme2.jpg' },
+        { id: 'm3', title: 'dance gif', src: '../characters/marge/meme3.gif' },
+        { id: 'm4', title: 'mob wife', src: '../characters/marge/meme4.jpg' },
+        { id: 'm5', title: 'neat potatoes', src: '../characters/marge/meme5.jpg' },
+        { id: 'm6', title: 'side eye', src: '../characters/marge/meme6.jpg' }
     ];
 
-    /*** DOM references ***/
     const tabInfo = document.getElementById('tabInfo');
     const tabMemes = document.getElementById('tabMemes');
 
@@ -25,7 +23,6 @@
     const singleMemeContainer = document.getElementById('singleMemeContainer');
     const memeBackBtn = document.getElementById('memeBackBtn');
 
-    /*** Utility: show/hide views ***/
     function hideAllViews() {
         viewInfo.style.display = 'none';
         viewMemes.style.display = 'none';
@@ -38,7 +35,7 @@
         hideAllViews();
         viewInfo.style.display = 'block';
         tabInfo.classList.add('active');
-        // Clear single meme container
+
         singleMemeContainer.innerHTML = '';
     }
 
@@ -46,7 +43,7 @@
         hideAllViews();
         viewMemes.style.display = 'block';
         tabMemes.classList.add('active');
-        // Render Grid If It's Empty
+
         if (!memesGrid.hasChildNodes()) renderMemesGrid();
     }
 
@@ -55,7 +52,7 @@
         if (!meme) return;
         hideAllViews();
         viewSingle.style.display = 'block';
-        // Build single meme content
+
         singleMemeContainer.innerHTML = '';
         const wrapper = document.createElement('div');
         wrapper.className = 'singleMeme';
@@ -71,7 +68,6 @@
         memeBackBtn.focus();
     }
 
-    /*** Render memes grid ***/
     function renderMemesGrid() {
         memesGrid.innerHTML = '';
         const grid = document.createElement('div');
@@ -94,7 +90,6 @@
         memesGrid.appendChild(grid);
     }
 
-    /*** Event Handlers ***/
     tabInfo.addEventListener('click', function () {
         showInfoView();
     });
@@ -103,7 +98,6 @@
         showMemesGrid();
     });
 
-    // Delegate clicks inside memesGrid to open single meme
     memesGrid.addEventListener('click', function (e) {
         // Find closest memeTile button
         const tile = e.target.closest('.memeTile');
@@ -113,15 +107,13 @@
         showSingleMeme(id);
     });
 
-    // Back button from single meme to memes grid
     memeBackBtn.addEventListener('click', function () {
         showMemesGrid();
-        // Move focus to first meme tile for keyboard users
+
         const firstTile = memesGrid.querySelector('.memeTile');
         if (firstTile) firstTile.focus();
     });
 
-    /*** Keyboard accessibility: allow Enter/Space to open tiles when focused ***/
     memesGrid.addEventListener('keydown', function (e) {
         const tile = e.target.closest('.memeTile');
         if (!tile) return;
@@ -132,15 +124,11 @@
         }
     });
 
-    /*** Initialize on DOMContentLoaded (script loaded with defer recommended) ***/
     function init() {
-        // Render initial content if needed
         renderMemesGrid();
-        // Show info view by default
         showInfoView();
     }
 
-    // If DOM already loaded (defer), init immediately; otherwise wait
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', init);
     } else {

@@ -5,8 +5,8 @@
 
     // Meme Data
     const MEMES = [
-        { id: 'm1', title: 'asses', src: '/images/characters/apu/memes/asses.jpg' },
-        { id: 'm2', title: 'attempt', src: '/images/characters/apu/memes/attempt.jpg' },
+        { id: 'm1', title: 'asses', src: '/characters/apu/meme1.jpg' },
+        { id: 'm2', title: 'attempt', src: '/characters/apu/meme2.jpg' },
         { id: 'm3', title: 'chill guy', src: '/images/characters/apu/memes/cill_guy.jpg' },
         { id: 'm4', title: 'close up', src: '/images/characters/apu/memes/close_up.jpg' },
         { id: 'm5', title: 'dance', src: '/images/characters/apu/memes/dance.gif' },
